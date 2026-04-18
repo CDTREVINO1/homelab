@@ -18,11 +18,11 @@ spec:
   patches:
     - patch: |-
         apiVersion: autoscaling/v2
-        kind: HorizontalPodAutoScaler
+        kind: HorizontalPodAutoscaler
         metadata:
           name: podinfo
         spec:
           minReplicas: 3
       target:
         name: podinfo
-        kind: HorizontalAutoScaler
+        kind: HorizontalPodAutoscaler
